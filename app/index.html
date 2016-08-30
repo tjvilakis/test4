@@ -23,14 +23,22 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" margin-bottom: 0;>
+<nav class="navbar navbar-inverse navbar-fixed-top" margin-bottom: 0;>
   <div class="container-fluid">
     <div class="navbar-header">
       <a href="#" class="navbar-left"><img src="logo2.png"></a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#!/view1">Top Lists</a></li>
-      <li><a href="#!/view2">Dat Viewer</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#!/view2" class="disabled">Dat Viewer</a></li>
+          <li><a href="#" class="disabled">Downloads</a></li>
+          <li><a href="#" class="disabled">Links</a></li>
+        </ul>
+      </li>
       <li><a href="#!/view3">About</a></li>
     </ul>
   </div>
