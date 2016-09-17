@@ -18,7 +18,7 @@ angular.module('myApp.view1', ['ngRoute'])
                 // Success
                 angular.copy(response.data, $scope.information);
             }, function () {
-                // Failure
+                console.error(error);
             });
 
     }]);
