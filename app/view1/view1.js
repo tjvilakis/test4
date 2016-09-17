@@ -12,7 +12,7 @@ angular.module('myApp.view1', ['ngRoute'])
     .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
         //$scope.test = "test";
 
-        $scope.information = {};
+        $scope.information = [];
         //the above works when I bind in view1.html
 
         $http.get('http://52.53.202.129:3000/top100')
@@ -23,7 +23,7 @@ angular.module('myApp.view1', ['ngRoute'])
             }, function () {
                 //console.error(error);
             });
-        /*
+        /* //the below is as per the angularjs.org desc and also does not work..
         $http({
             method: 'GET',
             url: 'http://52.53.202.129:3000/top100l'
