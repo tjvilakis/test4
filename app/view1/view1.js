@@ -11,10 +11,11 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope', function($scope, $http) {
   //$scope.test = "angular sucks ballsacks";
-
+/*
   $http.get('http://52.53.202.129:3000/top100')
       .then(function(response) {
         $scope.test = response.data;
   });
+  */
 
 }]);
