@@ -83,7 +83,13 @@
 <![endif]-->
 
 <div ng-view></div>
+<h1 ng-controller="HelloWorldCtrl">{{helloMessage}}</h1>
 
+<script type="text/javascript">
+  function HelloWorldCtrl($scope) {
+    $scope.helloMessage = "Hello World Test";
+  }
+</script>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
