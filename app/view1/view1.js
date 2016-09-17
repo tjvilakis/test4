@@ -16,8 +16,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
 //from http://fdietz.github.io/recipes-with-angular-js/consuming-external-services/requesting-json-data-with-ajax.html
   $http.get('http://52.53.202.129:3000/top100').
-  success(function(data) {
-    $scope.entconn2 = data;
+  success(function(response) {
+    $scope.dateCollected = response.data.datestamp;
   });
 
 }]);
