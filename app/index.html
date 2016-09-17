@@ -88,6 +88,24 @@
 <div ng-view></div>
 Name <input type="text" ng-model="name" /> {{name}}
 
+<div ng-app="myApp" ng-controller="myCtrl">
+  <br>
+  Collected from EntConn2.com at: {{hex}}
+</div>
+
+<script>
+  var app = angular.module('myApp', []);
+
+  app.service('hexafy', function() {
+    this.myFunc = function (x) {
+      return x.toString(16);
+    }
+  });
+  app.controller('myCtrl', function($scope, hexafy) {
+    $scope.hex = hexafy.myFunc(255);
+  });
+</script>
+
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
