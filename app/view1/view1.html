@@ -28,10 +28,8 @@
             });
 
             myApp.controller('AngularJSCtrl', function($scope, dataService) {
-                $scope.data = null;
-                dataService.getData().then(function(dataResponse) {
-                    $scope.data = dataResponse;
-                });
+                $scope.data = "test";
+
             });
         </script>
 
