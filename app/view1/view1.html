@@ -34,7 +34,7 @@
             myApp.controller('AngularJSCtrl', function($scope, dataService) {
                 $scope.data = null;
                 dataService.getData(function(dataResponse) {
-                    $scope.data = dataResponse;
+                    $scope.data = "test";
                 });
             });
         </script>
