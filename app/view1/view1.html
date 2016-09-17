@@ -8,29 +8,21 @@
         <p>As of 9/3/2016 the Python Telnet crawler script is complete.</p>
         <p>Beta release of game crawler should be by 9/6/2016.</p>
 
-        <div ng-app="myApp" ng-controller="AngularJSCtrl">
+        <div ng-app="myApp" ng-controller="myCtrl">
             <br>
-            Collected from EntConn2.com at: {{data}}
+            Collected from EntConn2.com at: {{hex}}
         </div>
 
         <script>
-            var myApp = angular.module('myApp',[]);
+            var app = angular.module('myApp', []);
 
-            myApp.service('dataService', function($http) {
-                    this.getData = function() {
-                    // $http() returns a $promise that we can add handlers with .then()
-                    return $http({
-                        method: 'GET',
-                        url: 'http://52.53.202.129:3000/top100'
-                    });
+            app.service('hexafy', function() {
+                this.myFunc = function (x) {
+                    return x.toString(16);
                 }
             });
-
-            myApp.controller('AngularJSCtrl', function($scope, dataService) {
-                $scope.data = null;
-                dataService.getData().then(function(dataResponse) {
-                    $scope.data = dataResponse;
-                });
+            app.controller('myCtrl', function($scope, hexafy) {
+                $scope.hex = hexafy.myFunc(255);
             });
         </script>
 
