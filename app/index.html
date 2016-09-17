@@ -3,7 +3,8 @@
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js" xmlns:padding-top="http://java.sun.com/JSP/Page"> <!--<![endif]-->
+<!-- <html lang="en" ng-app="myApp" class="no-js" xmlns:padding-top="http://java.sun.com/JSP/Page"> <!--<![endif]--> -->
+<html data-ng-app="">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,7 +86,7 @@
 <![endif]-->
 
 <div ng-view></div>
-
+Name <input type="text" ng-model="name" /> {{name}}
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
