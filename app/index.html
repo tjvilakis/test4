@@ -93,14 +93,13 @@ Name <input type="text" ng-model="name" /> {{name}}
 <script>
   var demoApp = angular.module('demoApp', []);
   function(SimpleController($scope) {
-    $scope.test = "test mother fucker!";
+    $scope.test = "test...";
   });
   demoApp.controller('SimpleController', SimpleController);
 </script>
 
-<!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
