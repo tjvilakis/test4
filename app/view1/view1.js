@@ -14,10 +14,9 @@ angular.module('myApp.view1', ['ngRoute'])
   //$scope.test = "test";
   //the above works when I bind in view1.html
 
-//from http://fdietz.github.io/recipes-with-angular-js/consuming-external-services/requesting-json-data-with-ajax.html
   $http.get('http://52.53.202.129:3000/top100').
   success(function(response) {
-    $scope.dateCollected = response.data.datestamp;
+    $scope.dateCollected = response;
   });
 
 }]);
