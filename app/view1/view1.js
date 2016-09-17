@@ -20,7 +20,7 @@ angular.module('myApp.view1', ['ngRoute'])
     $scope.entconn2 = data;
   }).
   error(function(data, status, headers, config) {
-    // log error
+    $scope.test="error";
   });
 
 }]);
