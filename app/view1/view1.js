@@ -10,22 +10,22 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-    .factory('jsonFactory', function ($q, $http) {
-      return {
-        getOtherStuff: function () {
-          var deferred = $q.defer(),
-              httpPromise = $http.get('http://52.53.202.129:3000/top100');
+.factory('jsonFactory', function ($q, $http) {
+  return {
+    getOtherStuff: function () {
+      var deferred = $q.defer(),
+          httpPromise = $http.get('http://52.53.202.129:3000/top100');
 
-          httpPromise.then(function (response) {
-            deferred.resolve(response);
-          }, function (error) {
-            console.error(error);
-          });
+      httpPromise.then(function (response) {
+        deferred.resolve(response);
+      }, function (error) {
+        console.error(error);
+      });
 
-          return deferred.promise;
-        }
-      };
-    })
+      return deferred.promise;
+    }
+  };
+})
 
 .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
   //$scope.test = "test";
@@ -37,5 +37,4 @@ angular.module('myApp.view1', ['ngRoute'])
       }, function (error) {
         console.error(error);
       });
-
 }]);
