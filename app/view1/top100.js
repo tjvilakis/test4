@@ -1,7 +1,5 @@
-// Code goes here
+var app = angular.module('plunker', []);
 
-angular.module('app', []).controller('MainController', MainController);
-
-function MainController($scope) {
-    $scope.angularMessage = "Test test test test"
-}
+app.controller('MainCtrl', function($scope) {
+    $scope.name = 'World';
+});
