@@ -86,18 +86,13 @@
 <![endif]-->
 
 <div ng-view></div>
-Name <input type="text" ng-model="name" /> {{name}}
 
-<h1 ng-app="demoApp" ng-controller="SimpleController">{{test}}</h1>
-
-<script>
   var demoApp = angular.module('demoApp', []);
   function(SimpleController($scope) {
     $scope.test = "test...";
   });
   demoApp.controller('SimpleController', SimpleController);
 </script>
-
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
@@ -108,7 +103,6 @@ Name <input type="text" ng-model="name" /> {{name}}
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
-
 
 </body>
 </html>
