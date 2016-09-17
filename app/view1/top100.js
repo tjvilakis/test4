@@ -9,6 +9,6 @@ app.service('hexafy', function() {
     }
 });
 app.controller('myCtrl', function($scope, hexafy) {
-    $scope.hex = hexafy.myFunc(255);
+    $scope['hex'] = hexafy.myFunc(255);
     $scope.$apply;
 });
