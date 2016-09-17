@@ -26,7 +26,7 @@ angular.module('myApp.view1', ['ngRoute'])
          */
 
         $http({
-            method: 'GET',
+            method: 'JSONP',
             url: 'http://52.53.202.129:3000/top100'
         }).then(function successCallback(response) {
             // this callback will be called asynchronously
