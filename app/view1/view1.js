@@ -22,7 +22,7 @@ angular.module('myApp.view1', ['ngRoute'])
                 //console.error(error);
             });
             */
-
+        $scope.information = {};
         $http({
             method: 'GET',
             url: 'http://52.53.202.129:3000/top100l'
