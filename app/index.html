@@ -83,11 +83,12 @@
 <![endif]-->
 
 <div ng-view></div>
-<h1 ng-controller="HelloWorldCtrl">{{helloMessage}}</h1>
+<h1 ng-controller="MainController">{{angularMessage}}</h1>
 
 <script type="text/javascript">
-  function HelloWorldCtrl($scope) {
-    $scope.helloMessage = "Hello World Test";
+  function MainController($scope)
+  {
+    $scope.angularMessage = "AngularJS Rocks!"
   }
 </script>
 
