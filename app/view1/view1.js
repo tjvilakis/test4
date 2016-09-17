@@ -16,7 +16,7 @@ angular.module('myApp.view1', ['ngRoute'])
         $http.get('http://52.53.202.129:3000/top100')
             .then(function (response) {
                 // Success
-                angular.copy(response.data.datestamp, $scope.information);
+                angular.copy(response.data, $scope.information);
             }, function () {
                 console.error(error);
             });
