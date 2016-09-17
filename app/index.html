@@ -88,22 +88,14 @@
 <div ng-view></div>
 Name <input type="text" ng-model="name" /> {{name}}
 
-<div ng-app="app" ng-controller="myCtrl">
-  <br>
-  Collected from EntConn2.com at: {{hex}}
-</div>
+<h1 ng-app="demoApp">{{test}}</h1>
 
 <script>
-  var app = angular.module('app', []);
-
-  app.service('hexafy', function() {
-    this.myFunc = function (x) {
-      return x.toString(16);
-    }
+  var demoApp = angular.module('demoApp', []);
+  function(SimpleController($scope) {
+    $scope.test = "test mother fucker!";
   });
-  app.controller('myCtrl', function($scope, hexafy) {
-    $scope.hex = hexafy.myFunc(255);
-  });
+  demoApp.controller('SimpleController', SimpleController);
 </script>
 
 <!-- In production use:
