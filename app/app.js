@@ -6,7 +6,8 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view3',
   'myApp.version',
-  'Landing'
+  'Landing',
+    'datviewer'
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
