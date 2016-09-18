@@ -14,17 +14,18 @@ angular.module('myApp.view1', ['ngRoute'])
 
         $scope.information = [];
         //the above works when I bind in view1.html
-        /*
+
         $http.get('http://52.53.202.129:3000/top100')
             .then(function (response) {
                 // Success
-                angular.copy(response.data, $scope.information);
+                //angular.copy(response.data, $scope.information);
+                $scope.information = response.data;
 
             }, function () {
                 //console.error(error);
             });
-         */
 
+        /*
         $http({
             method: 'GET',
             url: 'http://52.53.202.129:3000/top100'
@@ -38,6 +39,7 @@ angular.module('myApp.view1', ['ngRoute'])
             // called asynchronously if an error occurs
             // or server returns response with an error status.
         });
+         */
 
 
     }]);
