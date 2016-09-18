@@ -10,7 +10,6 @@
 
 
         Name <input type="text" ng-model="name" /> {{name}}<br>
-        {{test}}<br>
 
             <div ng-repeat="item in information">
                 <p>{{item.id}}</p>
@@ -21,6 +20,7 @@
         <!-- <li ng-repeat="(key, value) in information">{{key}} {{value}}</li> -->
 
         <li ng-repeat="item in information">{{item.top100}}</li>
+        <p ng-repeat="(key, value) in information">{{value}}</p>
 
         <!--
         <table class="table table-striped">
