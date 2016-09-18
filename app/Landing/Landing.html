@@ -5,6 +5,9 @@
         <h1>Welcome to TurboTwo</h1>
         <h2>Updates</h2>
 
+    <p><b>9/18/2016 6:01pm</b> - Wrapping up the formatting of the telnet top 100 data into manageable JSON data today. </p>
+    <hr/>
+
     <p><b>9/17/2016 7:30pm</b> - Ran into issues with CORS and cross site header stuff, overcame issue after 6 hours on SO.
     The site now successfully, using Angular JS uses an Angular controller to access an API hosted on this
     same server in order to do a RESTful GET of dynamic Top100 lists from game servers stored on the mongodb.
@@ -12,6 +15,7 @@
     only things left are content and display cleanup on the GUI and minor back end tweaks, mostly:
     <li>Sort the Top Lists either serverside or client side after AJAX call and put them in a table</li>
     <li>Cleanup CSS</li>
+    <li>Test python script with other servers</li>
     <li>Downloads</li></p>
         <hr/>
 
@@ -19,6 +23,17 @@
     The crawler successfully polls remote MajorMud game servers, grabs the Top 100 list after interrogating the
     login process and parses the buffer for actual Top 100 user information.  This is then scrubbed of ASCII
     markup and posted to mongodb.</p>
+        <hr/>
+
+    <p><b>8/21/2016 6:01pm</b> - Work on Telnet Crawler continues.  Bootstrap CSS selected for front end UI.
+    Blocking issue with the python crawler, the python telnet lib seems to not play nice with suppress go ahead
+    signals on a telnet connection.  Switched to socket lib and I can negotiate the connection.</p>
+        <hr/>
+
+    <p><b>8/7/2016 8:44pm</b> - Dev environment set up, Bitnami Linux MEAN stack running on Amazon Web Services (AWS)
+    EC2.  Github repo set up.  Angular Seed web shell configured in WebStorm on dev laptop, pushed successfully
+    to Github.  Git pull success, website online.  Using a command similar to "screen -d -m httpd" to persist
+    the web server after Putty ssh connection to server is closed.  </p>
         <hr/>
 
     <p><b>7/22/2016 9:03am</b> - Project design documents created and submitted to NU.  The TurboTwo project will use AngularJS, MongoDB,
