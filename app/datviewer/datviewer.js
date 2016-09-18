@@ -2,7 +2,7 @@
 
 angular.module('datviewer', ['ngRoute'])
 
-    .config(['datviewer', function($routeProvider) {
+    .config(['$routeProvider', function($routeProvider) {
       $routeProvider.when('/datviewer', {
         templateUrl: 'datviewer/datviewer.html',
         controller: 'datviewer'
