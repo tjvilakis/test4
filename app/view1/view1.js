@@ -18,8 +18,8 @@ angular.module('myApp.view1', ['ngRoute'])
         $http.get('http://52.53.202.129:3000/top100')
             .then(function (response) {
                 // Success
-                //angular.copy(response.data, $scope.information);
-                $scope.information = response.data;
+                angular.copy(response.data, $scope.information);
+                //$scope.information = response.data;
 
             }, function () {
                 //console.error(error);
