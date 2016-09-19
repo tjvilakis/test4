@@ -8,13 +8,23 @@
         <h2>Updates</h2>
             <hr/>
 
+    <p><b>9/19/2016 7:00pm</b> - <b>Proof of concept complete!</b>  Automatic python script logs in to game server
+    Entconn2.com and pulls top 100 list, post lists to mongodb.  Front end running Angular can access Express.js
+    API on this server, pull the data in JSON format from the mongodb and display it.  Some notes:
+    <ul>
+            <li>Still need to further dissect the data further for display in a better table and do metrics</li>
+            <li>It's worth noting that a standard Python Dictionary-data type was not sufficient and an OrderedDict collection was required</li>
+        </ul>
+    </p>
+            <hr/>
+
     <p><b>9/18/2016 6:01pm</b> - Wrapping up the formatting of the telnet top 100 data into manageable JSON data today
-        and tomorrow.  Also of note, after some analysis on the Py telnet crawler script, I noted that:
-        <ul><li>I need to
+    and tomorrow.  Also of note, after some analysis on the Py telnet crawler script, I noted that:
+    <ul><li>I need to
     include handling for the condition that the script does NOT connect, allow the DB to keep the existing top list
     data, and pass another JSON keypair/element indicating successful or unsuccessful connections to the game servers.
-           </li> </ul></p>
-    <hr/>
+   </li> </ul></p>
+             <hr/>
 
     <p><b>9/17/2016 7:30pm</b> - Ran into issues with CORS and cross site header stuff, overcame issue after 6 hours on SO.
     The site now successfully, using Angular JS uses an Angular controller to access an API hosted on this
