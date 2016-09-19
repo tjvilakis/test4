@@ -1,0 +1,43 @@
+    <div class="page-header vertical-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" ng-app="myApp">
+
+        <h2>Game Server: {{information.board}}.com</h2>
+        <p>At <b>{{information.datestamp}}</b> this information was automatically collected by a telnet-crawling Python script.</p>
+        <p class="small">Disclaimer, content warning:  I am not responsible for the stupid or offensive names or terms other people use. </p>
+            <hr/>
+
+
+            <!--
+        Test Input <input type="text" ng-model="name" /> {{name}}<br>
+
+
+                    <div ng-repeat="item in information">
+                        <p>{{item.id}}</p>
+                        <p>{{item.datestamp}}</p>
+                        <p>{{item.top100}}</p>
+                    </div>
+
+                 <li ng-repeat="(key, value) in information">{{key}} {{value}}</li> -->
+
+        <!-- <li ng-repeat="item in information">{{item.top100}}</li>
+
+        <p ng-repeat="(key, value) in information">{{value}}</p>
+        -->
+
+         <!-- {{information.player}} -->
+            <p class="small">This table display is not finished, is still work in progress</p>
+        <table class="table table-condensed">
+            <thead>
+            <th>Top 100 at {{information.board}}</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(key, value) in information" ng-if="$index > 2">
+                <td>{{value}}</td>
+                </tr>
+            </tbody>
+
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
