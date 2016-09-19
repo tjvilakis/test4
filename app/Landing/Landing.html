@@ -7,7 +7,12 @@
         <h1>Welcome to TurboTwo</h1>
         <h2>Updates</h2>
 
-    <p><b>9/18/2016 6:01pm</b> - Wrapping up the formatting of the telnet top 100 data into manageable JSON data today. </p>
+    <p><b>9/18/2016 6:01pm</b> - Wrapping up the formatting of the telnet top 100 data into manageable JSON data today
+        and tomorrow.  Also of note, after some analysis on the Py telnet crawler script, I noted that:
+        <ul><li>I need to
+    include handling for the condition that the script does NOT connect, allow the DB to keep the existing top list
+    data, and pass another JSON keypair/element indicating successful or unsuccessful connections to the game servers.
+           </li> </ul></p>
     <hr/>
 
     <p><b>9/17/2016 7:30pm</b> - Ran into issues with CORS and cross site header stuff, overcame issue after 6 hours on SO.
@@ -15,10 +20,12 @@
     same server in order to do a RESTful GET of dynamic Top100 lists from game servers stored on the mongodb.
     This brings the project's major aim to fruiting.  All major technical barries have been addressed.  The
     only things left are content and display cleanup on the GUI and minor back end tweaks, mostly:
-    <li>Sort the Top Lists either serverside or client side after AJAX call and put them in a table</li>
-    <li>Cleanup CSS</li>
-    <li>Test python script with other servers</li>
-    <li>Downloads</li></p>
+    <ul>
+        <li>Sort the Top Lists either serverside or client side after AJAX call and put them in a table</li>
+        <li>Cleanup CSS</li>
+        <li>Test python script with other servers</li>
+        <li>Downloads</li>
+        </ul></p>
         <hr/>
 
     <p><b>9/3/2016 6:01pm</b> - Telnet Crawler completed, written in Python on the MEAN stack on EC2 Amazon Web Services.
