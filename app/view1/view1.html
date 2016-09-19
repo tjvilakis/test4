@@ -27,7 +27,7 @@
 
          <!-- {{information.player}} -->
             <b>lol... need to fix my damn python dict. mic drop</b>
-        <li ng-repeat="(ley, value) in information">{{value}}</li>
+        <p ng-repeat="(ley, value) in information | limitTo: information.length : 3">{{value}}</p>
 
 
         </div>
