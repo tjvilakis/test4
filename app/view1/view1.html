@@ -6,7 +6,7 @@
         <p>At <b>{{information.datestamp}}</b> this information was automatically collected by a telnet-crawling Python script.</p>
         <p class="small">Disclaimer, content warning:  I am not responsible for the stupid or offensive names or terms other people use. </p>
             <hr/>
-        <p>Top 100:</p>
+
 
             <!--
         Test Input <input type="text" ng-model="name" /> {{name}}<br>
@@ -26,9 +26,15 @@
         -->
 
          <!-- {{information.player}} -->
-
-        <p ng-repeat="(ley, value) in information" ng-if="$index > 2">{{value}}</p>
-
+        <table class="table table-condensed">
+            <thead>
+            <th>Top 100 at {{information.board}}</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(key, value) in information" ng-if="$index > 2">
+                <td>{{value}}</td>
+                </tr>
+            </tbody>
 
         </div>
         <div class="col-md-2"></div>
