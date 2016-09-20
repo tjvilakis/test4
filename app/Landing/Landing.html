@@ -13,13 +13,13 @@
     thing ever, to link to a download file on your site is now practically a 20 step process in Angula at least
         on a Bitnami AWS server.  Not happy about that.</p><p><b>Update:</b> Much to the chagrin of trolls on
         Stack Overflow, I figured out an easier way to do this.  Edit the Apache2 httpd.conf file to add an
-        Alias /downloads /{project path}/downloads and then point your href at the FULL URL PATH of the file ie.
-        http://www.turbotwo.net/downloads/file like such</p>
+        Alias /downloads /{project path}/downloads and then point your href at the full or partial URL path of the file ie.
+        http://www.turbotwo.net/downloads/file or /downloads/file like such</p>
             <ul><li>
                 <a target="_blank" href="http://www.turbotwo.net/downloads/MegaMUD_v1.03u.zip">This</a> works.
             </li>
             <li>
-                <a target="_blank" href="downloads/MegaMUD_v1.03u.zip">This</a> does not.
+                <a target="_blank" href="downloads/MegaMUD_v1.03u.zip">This</a> also works.
             </li></ul>
     <hr/>
     <p><b>9/19/2016 7:00pm</b> - <b>Proof of concept complete!</b>  Automatic python script logs in to game server
