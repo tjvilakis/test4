@@ -9,7 +9,8 @@ angular.module('myApp', [
   'Landing',
   'datviewer',
   'darkwood',
-  'downloads'
+  'downloads',
+  'comment'
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
