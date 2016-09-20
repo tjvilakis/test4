@@ -8,7 +8,8 @@ angular.module('myApp', [
   'myApp.version',
   'Landing',
   'datviewer',
-  'darkwood'
+  'darkwood',
+  'downloads'
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
