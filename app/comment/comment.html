@@ -4,14 +4,16 @@
 
         <h1>Contact</h1>
         <p>Please leave a comment, gripe, or suggestion.</p>
-        Name: <input type="text" ng-model="name"><br/>
-        Email: <input type="text" ng-model="email"><br/>
-        Message: <input type="t" ng-model="message" style="width: 300px; height: 300px"><br/>
-        <hr/>
-        <img src="comment/2.gif"><img src="comment/1.gif"><img src="comment/3.gif"><br/>
-        <input type="text" ng-model="validate"><br/>
-        Please enter the numbers above to prove you are not a troll.<br/>
-        <button ng-click="">Send</button>
+
+        <table>
+        <tr><td>Name:</td><td><input type="text" ng-model="name"></td></tr>
+        <tr> <td>Email:</td> <td><input type="text" ng-model="email"></td></tr>
+        <tr><td>Message:</td> <td><input type="t" ng-model="message" style="width: 300px; height: 300px"></td></tr>
+        <tr><td></td><td><img src="comment/2.gif"><img src="comment/1.gif"><img src="comment/3.gif"></td></tr>
+        <tr><td></td><td><input type="text" ng-model="validate"></td></tr>
+        <tr><td></td><td>Please enter the numbers above to prove you are not a troll.</td></tr>
+        <tr><td></td><td><button ng-click="">Send</button></td></tr>
+        </table>
 
     </div>
     <div class="col-md-2"></div>
