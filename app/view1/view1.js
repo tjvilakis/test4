@@ -20,7 +20,7 @@ angular.module('myApp.view1', ['ngRoute'])
                 // Success
                 //angular.copy(response.data, $scope.information);
                 $scope.information = response.data;
-
+            //
             }, function () {
                 //console.error(error);
             });
